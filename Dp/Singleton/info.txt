@@ -1,0 +1,2 @@
+﻿static stored on stack 
+singleton stored on Heap
