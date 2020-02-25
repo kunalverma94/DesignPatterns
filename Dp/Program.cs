@@ -7,8 +7,15 @@ namespace Dp
     {
         static void Main(string[] args)
         {
-            LazySingletonThread();
+            HondaCarMaker maker = new HondaCarMaker();
+            maker.FinishCarMaking();
+            System.Console.WriteLine(maker.ToString());
+        }
 
+        private static void SimpleFactory()
+        {
+            IMath imath = Dp.SimpleFactory.GetMath(MathType.Iota);
+            System.Console.WriteLine(imath.Id);
         }
 
         public static void BaiscSingletonFail()
